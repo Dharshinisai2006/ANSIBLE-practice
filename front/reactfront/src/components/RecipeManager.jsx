@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "../Styles/style.css";
+import "../styles/style.css";
 
 const RecipeBookManager = () => {
   const [recipes, setRecipes] = useState([]);
