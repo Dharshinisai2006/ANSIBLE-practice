@@ -14,8 +14,7 @@ const RecipeBookManager = () => {
   const [editMode, setEditMode] = useState(false);
 
   // Vite environment variable (import.meta.env)
-  const API_ROOT = import.meta.env.VITE_API_URL || "http://localhost:8080";
-  const baseUrl = `${API_ROOT}/recipeapi`;
+  const baseUrl = `${import.meta.env.VITE_API_URL}/recipeapi`;
 
   // For fetch-by-id
   const [idToFetch, setIdToFetch] = useState("");
